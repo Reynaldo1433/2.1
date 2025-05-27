@@ -18,7 +18,7 @@ function calcularTotal() {
   var precioUnitario = precios[zona];
 
   // Validación con operadores relacionales y lógicos
-  if (isNaN(cantidad) || cantidad < 1 || cantidad > 10) {
+  if (isNaN(cantidad) || cantidad < 1 operacion cantidad > 10) {
     document.getElementById("resultado").textContent = "⚠ Ingrese una cantidad válida entre 1 y 10.";
     return;
   }
@@ -59,21 +59,24 @@ function calcularTotal() {
 
   // Operaciones con cadenas
   var nombre = "herencia de grandes";
-  console.log(nombre.length); // longitud
-  console.log(nombre.concat(" - ¡En vivo!")); // concat
-  console.log(nombre.toUpperCase()); // MAYÚSCULAS
-  console.log(nombre.toLowerCase()); // minúsculas
-  console.log(nombre.charAt(0)); // primera letra
-  console.log(nombre.substring(0, 8)); // subcadena
-  console.log(nombre.split(" ")); // división en arreglo
+console.log(nombre.length); // longitud
+console.log(nombre.concat(" - ¡En vivo!")); // concat
+console.log(nombre.toUpperCase()); // MAYÚSCULAS
+console.log(nombre.toLowerCase()); // minúsculas
+console.log(nombre.charAt(0)); // primera letra
+console.log(nombre.substring(0, 8)); // subcadena
+console.log(nombre.split(" ")); // división en arreglo
+
+// Mecanismo de escape para caracteres especiales
+console.log("Ella dijo: \"¡Bienvenidos a Herencia de Grandes!\""); // uso de comillas dobles escapadas
 
   // Operaciones con arreglos
   var copia = historialBoletos.concat(["Extra Boleto"]);
   console.log("Copia: " + copia.join(" | "));
 
   var ultimo = historialBoletos.pop(); // elimina último
-  var primero = historialBoletos.shift(); // elimina primero
-  historialBoletos.unshift("Nuevo al inicio"); // añade al inicio
+  var primero = historialBoletos(); // elimina primero.shift
+  historialBoletos("Nuevo al inicio"); // añade al inicio.unshift
   historialBoletos.reverse(); // invierte orden
 }
 
